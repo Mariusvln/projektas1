@@ -1,11 +1,12 @@
- * {
+@import url(../assets/variables.css);
+* {
  	box-sizing: border-box;
  	margin: 0;
  	padding: 0;
  }
 
  .parent {
- 	border: thin solid rgb(67, 65, 64);
+ 	border: thin solid var(--color-secondary-MirageBlue);
  	position: relative;
  	width: 23.438rem;
  	height: 41.688rem;
@@ -34,8 +35,8 @@
  	flex-shrink: 0;
  	text-align: center;
  	font-size: 1.25rem;
- 	color: #fbfcfe;
- 	background-color: #1B262F;
+	color: var(--color-primary-LinkWaterWhite);
+ 	background-color: var(--color-secondary-MirageBlue);
  }
 
  .group-icon {
@@ -102,9 +103,11 @@
  	right: 0%;
  	bottom: 0%;
  	left: 0%;
- 	box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+ 	/* box-shadow: 10px 10px 25px -10px #36536b40; */
+ 	box-shadow: 10px 10px 25px -10px var(--color-secondary-MirageBlue);
+
  	border-radius: 24px;
- 	background-color: #ba4270;
+ 	background-color: var(--color-primary-DarkPink);
  }
 
  .schedule-a-demo2 {
@@ -124,7 +127,7 @@
  	right: 9%;
  	bottom: 85.61%;
  	left: 8%;
- 	background-color: #fbfcfe;
+ 	background-color: var(--color-primary-LinkWaterWhite);
  	opacity: 0.15;
  	mix-blend-mode: normal;
  }
