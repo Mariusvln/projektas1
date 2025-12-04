@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital,wght@0,400;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* PRIMARY Colors */
+  --color-primary-DarkPink: #ba4270;
+  --color-primary-LinkWaterWhite: #fbfcfe;
+
+  /* SECONDARY Colors */
+  --color-secondary-SanJuanBlue: #36536b;
+  --color-secondary-MirageBlue: #1b262f;
+  --color-secondary-CharmPink-Act: #da6d97;
+  --color-secondary-LightSanJuanBlue: #6c8294;
+  /* ERROR */
+  --color-error: #f00000;
+
+  /* TYPOGRAPHY */
+  --h1-DM-large: 400 72px/72px "DM Serif Display", serif;
+  --h1-DM-small: 400 56px/56px "DM Serif Display", serif;
+  --h2-DM: 400 48px/56px "DM Serif Display", serif;
+  --h3-DM-large: 400 32px/40px "DM Serif Display", serif;
+  --h3-Sans-small: 400 18px/25px "Public Sans", sans-serif;
+  --h4-DM: 400 24px/32px "DM Serif Display", serif;
+  --body-sans: 400 15px/28px "Public Sans", sans-serif;
+}
