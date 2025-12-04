@@ -23,3 +23,133 @@
   --h4-DM: 400 24px/32px "DM Serif Display", serif;
   --body-sans: 400 15px/28px "Public Sans", sans-serif;
 }
+
+.btn-primary-light{
+  background-color: #BA4270;
+  color: #FBFCFE;
+  border-radius: 24px;
+}
+
+.btn-primary-light:hover{
+  background-color: #DA6D97;
+  color: #FBFCFE;
+  border-radius: 24px;
+}
+
+.btn-primary-light-disabled{
+  background-color: #BA4270;
+  color: #FBFCFE;
+  border-radius: 24px;
+  opacity: 50%;
+}
+
+
+.btn-secondary-light{
+  background-color: #ffffff00;
+  color: #FBFCFE;
+  border-radius: 24px;
+  
+  border: 1px solid #FBFCFE;
+}
+
+
+.btn-secondary-light:hover{
+  background-color: #ffffff;
+  color: #FBFCFE;
+  border-radius: 24px;
+  
+  border: 1px solid #FBFCFE;
+}
+
+.btn-secondary-light-disabled{
+  background-color: #ffffff00;
+  color: #FBFCFE;
+  border-radius: 24px;
+  opacity: 50%;
+  
+  border: 1px solid #FBFCFE;
+}
+@media screen and (max-width: 600px) {
+  .btn-primary-light{
+    background-color: #BA4270;
+    color: #FBFCFE;
+    border-radius: 24px;
+    width: 372px;
+    height: 48px;
+  }
+
+  .btn-primary-light:hover{
+    background-color: #DA6D97;
+    color: #FBFCFE;
+    border-radius: 24px;
+    width: 372px;
+    height: 48px;
+  }
+
+  .btn-primary-light-disabled{
+    background-color: #BA4270;
+    color: #FBFCFE;
+    border-radius: 24px;
+    opacity: 50%;
+    width: 372px;
+    height: 48px;
+  }
+
+  .btn-secondary-dark{
+    background-color: #ffffff00;
+    color: #FBFCFE;
+    border-radius: 24px;
+
+    border: 1px solid #36536B; 
+  }
+
+  .btn-secondary-dark:hover{
+    background: #36536B 0% 0% no-repeat padding-box;
+    color: #FBFCFE;
+    border-radius: 24px;
+
+    border: 1px solid #36536B; 
+  }
+
+  .btn-secondary-dark-disabled{
+    background-color: #ffffff00;
+    color: #FBFCFE;
+    border-radius: 24px;
+    opacity: 50%;
+
+    border: 1px solid #36536B; 
+  }
+}
+
+.btn-secondary-light-disabled{
+  background-color: #ffffff00;
+  color: #FBFCFE;
+  border-radius: 24px;
+
+  border: 1px solid #FBFCFE;
+}
+
+.btn-secondary-dark{
+  background-color: #ffffff00;
+  color: #FBFCFE;
+  border-radius: 24px;
+
+  border: 1px solid #36536B; 
+}
+
+.btn-secondary-dark:hover{
+  background: #36536B 0% 0% no-repeat padding-box;
+  color: #FBFCFE;
+  border-radius: 24px;
+
+  border: 1px solid #36536B; 
+}
+
+.btn-secondary-dark-disabled{
+  background-color: #ffffff00;
+  color: #FBFCFE;
+  border-radius: 24px;
+  opacity: 50%;
+
+  border: 1px solid #36536B; 
+}
