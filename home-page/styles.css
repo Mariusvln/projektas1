@@ -146,11 +146,26 @@ h1 {
   height: 48px;
   border: none;
   border-radius: 24px;
-  background: #BA4270;
+  background: var(--color-primary-DarkPink);
   color: #ffffff;
   font: 600 16px/20px "Public Sans", sans-serif;
   cursor: pointer;
   box-shadow: 0 12px 35px rgba(186, 66, 112, 0.35);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease
+}
+
+/* Hover and disabled states to match design sheet */
+.hero__cta:hover {
+  background: var(--color-secondary-CharmPink-Act);
+  box-shadow: 0 12px 35px rgba(218, 109, 151, 0.45);
+}
+
+.hero__cta:disabled,
+.hero__cta[disabled] {
+  background: var(--color-secondary-CharmPink-Act);
+  opacity: 0.55;
+  box-shadow: 0 12px 35px rgba(27, 38, 47, 0.12);
+  cursor: not-allowed;
 }
 
 /* Help text under the CTA */
@@ -161,7 +176,7 @@ h1 {
   width: 225px;
   height: 17px;
   font: 400 14px/17px "Public Sans", sans-serif;
-  color: #6c8294;
+  color: var(--color-secondary-LightSanJuanBlue);
   text-align: left;
   margin: 0;
 }
