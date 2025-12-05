@@ -1,14 +1,24 @@
-@import url(../assets/variables.css);
-* {
+ * {
  	box-sizing: border-box;
  	margin: 0;
  	padding: 0;
  }
 
+ body {
+ 	max-width: 375px;
+ 	margin: 0;
+ 	line-height: normal;
+ }
+
+ a {
+ 	color: inherit;
+ 	text-decoration: none;
+ }
+
  .parent {
- 	border: thin solid var(--color-secondary-MirageBlue);
+ 	border: thin solid #434140;
  	position: relative;
- 	width: 23.438rem;
+ 	width: 100%;
  	height: 41.688rem;
  }
 
@@ -35,8 +45,8 @@
  	flex-shrink: 0;
  	text-align: center;
  	font-size: 1.25rem;
-	color: var(--color-primary-LinkWaterWhite);
- 	background-color: var(--color-secondary-MirageBlue);
+ 	color: #fbfcfe;
+ 	background-image: url(./bitmap.png);
  }
 
  .group-icon {
@@ -103,11 +113,9 @@
  	right: 0%;
  	bottom: 0%;
  	left: 0%;
- 	/* box-shadow: 10px 10px 25px -10px #36536b40; */
- 	box-shadow: 10px 10px 25px -10px var(--color-secondary-MirageBlue);
-
+ 	box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
  	border-radius: 24px;
- 	background-color: var(--color-primary-DarkPink);
+ 	background-color: #ba4270;
  }
 
  .schedule-a-demo2 {
@@ -127,12 +135,7 @@
  	right: 9%;
  	bottom: 85.61%;
  	left: 8%;
- 	background-color: var(--color-primary-LinkWaterWhite);
+ 	background-color: #fbfcfe;
  	opacity: 0.15;
  	mix-blend-mode: normal;
- }
-
- a {
- 	color: inherit;
- 	text-decoration: none;
  }
