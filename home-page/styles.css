@@ -10,17 +10,12 @@
   box-sizing: border-box;
 }
 
-/* Center the artboard in the viewport */
+/* Page base styles: normal document flow so hero shows first */
 body {
   margin: 0;
   font: var(--body-sans);
   color: var(--color-secondary-SanJuanBlue);
-  background: #EDF3F8; 
-  min-height: 100vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 56px 0 64px;
+  background: #EDF3F8;
 }
 
 /* Fixed-size mobile frame (375 x 760) */
@@ -28,7 +23,7 @@ body {
   position: relative;
   width: 375px;
   height: 760px;
-  margin: 0 auto;
+  margin: 0 auto 40px; /* center and add space before next section */
   overflow: hidden;
 }
 
@@ -219,4 +214,89 @@ h1 {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* Clients (logo grid) */
+.clients {
+  background-color: var(--color-secondary-MirageBlue);
+  color: #ffffff;
+  padding: 0 0 16px;
+  min-height: 350px; /* shrink empty area below logos */
+  position: relative;
+  /* circle SVG sits behind the logos */
+  background-image: url('./bg-pattern-circle.svg');
+  background-repeat: no-repeat;
+  background-position: top -160px left -149px; /* unchanged circle position */
+  background-size: 700px 363px; /* unchanged circle size */
+}
+
+.clients__wrap {
+  width: 375px; /* same width as first page/artboard */
+  margin: 0 auto;
+  padding-top: 96px; /* tighter top spacing to reduce overall gap */
+}
+
+.clients__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 24px; /* slightly tighter vertical spacing */
+}
+
+
+
+@media (min-width: 640px) {
+  .clients__wrap { width: 425px; }
+}
+
+/* Who we work with (text + button) */
+.partners {
+  background: var(--color-secondary-MirageBlue);
+  color: #ffffff;
+  padding: 32px 0 64px; /* top padding remains 0, tighten gap */
+  margin-top: -4px;
+  position: relative; /* enable overlay pseudo-element */
+}
+
+.partners__wrap {
+  width: 327px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.partners__wrap h2 {
+  font: 400 32px/40px "DM Serif Display", serif;
+  letter-spacing: -0.25px;
+  margin: 8px 0 16px;
+}
+
+.partners__wrap p {
+  font: var(--body-sans);
+  color: var(--color-primary-LinkWaterWhite);
+  opacity: 0.85;
+  width: 327px;
+  margin: 0 auto 28px;
+}
+
+.partners__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 48px;
+  border-radius: 24px;
+  border: 1px solid var(--color-primary-LinkWaterWhite);
+  color: var(--color-primary-LinkWaterWhite);
+  text-decoration: none;
+  font: 600 16px/20px "Public Sans", sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.partners__cta:hover {
+  background: rgba(251, 252, 254, 0.1);
+}
+
+@media (min-width: 640px) {
+  .partners__wrap { width: 425px; }
 }
