@@ -8,11 +8,14 @@
 
   /* SECONDARY Colors */
   --color-secondary-SanJuanBlue: #36536b;
+  --color-secondary-SanJuanBlue-50: rgba(54, 83, 107, 0.5);
+  --color-secondary-SanJuanBlue-25: rgba(54, 83, 107, 0.25);
   --color-secondary-MirageBlue: #1b262f;
   --color-secondary-CharmPink-Act: #da6d97;
   --color-secondary-LightSanJuanBlue: #6c8294;
+
   /* ERROR */
-  --color-error: #f00000;
+  --color-error: rgba(255, 0, 0, 0.5);
 
   /* TYPOGRAPHY */
   --h1-DM-large: 400 72px/72px "DM Serif Display", serif;
@@ -22,4 +25,8 @@
   --h3-Sans-small: 400 18px/25px "Public Sans", sans-serif;
   --h4-DM: 400 24px/32px "DM Serif Display", serif;
   --body-sans: 400 15px/28px "Public Sans", sans-serif;
+
+  /* ERROR */
+  --error-text: 400 11px / normal "Public Sans", sans-serif;
+  --error-letter-spacing: -0.085px;
 }
