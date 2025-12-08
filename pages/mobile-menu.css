@@ -1,4 +1,4 @@
- * {
+* {
  	box-sizing: border-box;
  	margin: 0;
  	padding: 0;
@@ -46,7 +46,7 @@
  	text-align: center;
  	font-size: 1.25rem;
  	color: #fbfcfe;
- 	background-image: url(./bitmap.png);
+ 	background-image: url(../images/bitmap2.png);
  }
 
  .group-icon {
