@@ -1,0 +1,119 @@
+body {
+  cursor: default;
+  position: relative;
+}
+.page-header {
+  padding-block: 40px;
+}
+.page-header__text {
+  font: var(--h3-DM-large);
+  color: var(--color-secondary-SanJuanBlue);
+  text-align: center;
+}
+.page-header__grey-ball {
+  width: 780px;
+  height: 780px;
+  background-color: var(--color-secondary-SanJuanBlue-25);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 80%;
+  left: 20%;
+}
+
+.form {
+  padding-inline: 24px;
+}
+
+.form__input {
+  height: 42px;
+}
+.form__textarea {
+  height: 89px;
+}
+.form__input,
+.form__textarea {
+  width: 100%;
+  margin-bottom: 25px;
+  padding-left: 20px;
+
+  border: none;
+  border-bottom: 1px solid var(--color-secondary-SanJuanBlue-50);
+  outline: none;
+
+  font: var(--body-sans);
+  color: var(--color-secondary-SanJuanBlue);
+  letter-spacing: -0.115px;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: var(--color-secondary-SanJuanBlue);
+  opacity: 0.5;
+  font: var(--body-sans);
+  letter-spacing: -0.115px;
+}
+.form__input:hover,
+.form__textarea:hover {
+  cursor: pointer;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  border-bottom: 1px solid var(--color-secondary-SanJuanBlue);
+}
+.form__error {
+  color: var(--color-error);
+  font: var(--error-text);
+  letter-spacing: 0.085px;
+
+  padding-left: 20px;
+}
+
+.form__input.error,
+.form__textarea.error {
+  color: var(--color-error);
+  border-color: var(--color-error);
+  opacity: 1;
+  margin: 0px;
+}
+
+.form__input.error::placeholder,
+.form__textarea.error::placeholder {
+  color: var(--color-error);
+  opacity: 1;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+}
+
+.form-checkbox__input {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.form-checkbox__custom {
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-secondary-SanJuanBlue-25);
+  flex-shrink: 0;
+}
+
+.form-checkbox__input:checked + .form-checkbox__custom {
+  background-color: var(--color-primary-DarkPink);
+  background-image: url("/images/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 11px 8px;
+}
+.form-checkbox__text {
+  color: var(--color-secondary-SanJuanBlue);
+  font: var(--body-sans);
+  letter-spacing: -0.115px;
+}

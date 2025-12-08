@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/contactForm.css" />
+    <link rel="stylesheet" href="/assets/variables.css" />
+    <script src="/contactForm.js" defer></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__grey-ball"></div>
+      <h3 class="page-header__text">
+        Submit a help request and we'll get in touch shortly
+      </h3>
+    </header>
+
+    <main class="page-main">
+      <section>
+        <form class="form" id="contactForm">
+          <div class="form__group">
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Name"
+              id="name"
+            />
+            <p class="form__error" id="name-error"></p>
+          </div>
+
+          <div class="form__group">
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Email Address"
+              id="email"
+            />
+            <p class="form__error" id="email-error"></p>
+          </div>
+
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Company Name" />
+          </div>
+
+          <div class="form__group">
+            <input type="text" class="form__input" placeholder="Title" />
+          </div>
+
+          <div class="form__group">
+            <textarea
+              class="form__textarea"
+              placeholder="Message"
+              id="message"
+            ></textarea>
+            <p class="form__error" id="message-error"></p>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" class="form-checkbox__input" />
+            <span class="form-checkbox__custom"></span>
+            <span class="form-checkbox__text">
+              Stay up-to-date with company announcements and updates to our API
+            </span>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
