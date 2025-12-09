@@ -8,6 +8,7 @@
 
 * {
   box-sizing: border-box;
+  max-width: 375px;
 }
 
 /* Page base styles: normal document flow so hero shows first */
@@ -16,12 +17,13 @@ body {
   font: var(--body-sans);
   color: var(--color-secondary-SanJuanBlue);
   background: #EDF3F8;
+  width: 100%;
+
 }
 
 /* Fixed-size mobile frame (375 x 760) */
 .artboard {
   position: relative;
-  width: 375px;
   height: 760px;
   margin: 0 auto 40px; /* center and add space before next section */
   overflow: hidden;
@@ -76,7 +78,7 @@ body {
 .hero__visual img {
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 25px 40px rgba(54, 83, 107, 0.2));
+  filter: drop-shadow(0 25px 40px #36536b33);
   opacity: 1;
   object-fit: contain;
 }
