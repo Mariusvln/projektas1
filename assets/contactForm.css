@@ -1,4 +1,5 @@
 body {
+  background-color: var(--color-background);
   cursor: default;
   position: relative;
 }
@@ -116,4 +117,21 @@ body {
   color: var(--color-secondary-SanJuanBlue);
   font: var(--body-sans);
   letter-spacing: -0.115px;
+}
+
+.form__button {
+  width: 152px;
+  height: 48px;
+  margin-top: 24px;
+  border: var(--color-secondary-SanJuanBlue) 1px solid;
+  border-radius: 24px;
+  font: var(--body-sans);
+  color: var(--color-secondary-SanJuanBlue);
+  letter-spacing: -0.115px;
+}
+
+.form__button:hover {
+  background-color: var(--color-secondary-SanJuanBlue);
+  color: var(--color-primary-LinkWaterWhite);
+  cursor: pointer;
 }
