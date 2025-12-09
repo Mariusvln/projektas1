@@ -1,7 +1,12 @@
 body {
+  max-width: 375px;
   background-color: var(--color-background);
   cursor: default;
   position: relative;
+}
+
+.page-main {
+  margin-bottom: 2rem;
 }
 .page-header {
   padding-block: 40px;
