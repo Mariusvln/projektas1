@@ -1,5 +1,7 @@
 @import url(../assets/variables.css);
 @import url(../images/checkbox.svg);
+
+
 img {
   
   position: fixed;
@@ -13,8 +15,7 @@ img {
 body {
   /* Layout Properties */
   background-color: #edf3f8;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
   top: 0rem;
   left: 0rem;
   width: 23.438rem;
@@ -23,6 +24,8 @@ body {
   background: var() 0% 0% no-repeat padding-box;
   opacity: 1;
 }
+
+
 
 header,
 h1 {
@@ -116,8 +119,12 @@ ul {
   background-color: #edf3f8;
   cursor: pointer;
   font-style: var(--body-sans);
+  color: var(--color-secondary-SanJuanBlue);
 }
-
+.access:hover{
+  background-color: var(--color-secondary-SanJuanBlue);
+  color: var(--color-primary-LinkWaterWhite);
+}
 
 .free-plan-prc,
 .basic-plan-prc,
@@ -129,10 +136,11 @@ ul {
 hr {
   width: 100%;
 }
-.container-prc {
+.main-prc {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 ul {
   list-style: none;
