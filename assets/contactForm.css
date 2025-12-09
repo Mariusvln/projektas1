@@ -36,11 +36,10 @@ body {
   width: 100%;
   margin-bottom: 25px;
   padding-left: 20px;
-
+  background-color: var(--color-background);
   border: none;
   border-bottom: 1px solid var(--color-secondary-SanJuanBlue-50);
   outline: none;
-
   font: var(--body-sans);
   color: var(--color-secondary-SanJuanBlue);
   letter-spacing: -0.115px;
