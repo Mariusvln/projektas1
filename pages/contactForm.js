@@ -1,5 +1,5 @@
 "use strict";
-const successMessage = document.querySelector("#success-message");
+
 const form = document.querySelector("#contactForm");
 
 const nameInput = document.querySelector("#name");
