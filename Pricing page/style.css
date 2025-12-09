@@ -1,0 +1,167 @@
+@import url(../assets/variables.css);
+@import url(../images/checkbox.svg);
+img {
+  
+  position: fixed;
+  z-index: -1;
+  top: -40.25rem;
+  left: 4.625rem;
+  width: 48.75rem;
+  height: auto;
+  opacity: 1;
+}
+body {
+  /* Layout Properties */
+  background-color: #edf3f8;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  top: 0rem;
+  left: 0rem;
+  width: 23.438rem;
+  height: 170.25rem;
+  /* UI Properties */
+  background: var() 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+header,
+h1 {
+  /* Layout Properties */
+  top: 8.063rem;
+  left: 1.5rem;
+  width: 20.438rem;
+  height: 2.75rem;
+
+  /* UI Properties */
+  text-align: center;
+  letter-spacing: -0.016rem;
+  color: var(--color-secondary-SanJuanBlue);
+  opacity: 1;
+  font-style: var(--h2-DM);
+}
+.free-plan,
+.basic-plan,
+.premium-plan {
+  /* Layout Properties */
+  top: 13.563rem;
+  left: 1.5rem;
+  width: 20.438rem;
+  height: 12.313rem;
+  /* UI Properties */
+  opacity: 1;
+}
+.plan-one,
+.plan-two,
+.plan-three {
+  /* Layout Properties */
+  top: 13.563rem;
+  left: 1.5rem;
+  width: 20.438rem;
+  height: 2.063rem;
+  /* UI Properties */
+  text-align: center;
+  letter-spacing: -0.011rem;
+  color: var(--color-primary-DarkPink);
+  opacity: 1;
+  font-style: var(--h2-DM);
+}
+.about-plan-one,
+.about-plan-two,
+.about-plan-three {
+  /* Layout Properties */
+  top: 16.188rem;
+  left: 1.5rem;
+  width: 20.438rem;
+  height: 2.813rem;
+  /* UI Properties */
+  text-align: center;
+  font: normal normal 200 0.938rem/1.75rem Public Sans;
+  letter-spacing: 0rem;
+  color: var(--color-secondary-LightSanJuanBlue);
+  opacity: 1;
+  display: flex;
+  align-items: center;
+font-family: var( --h3-Sans-small);
+}
+.price {
+  /* Layout Properties */
+  top: 21.063rem;
+  left: 1.5rem;
+  width: 20.438rem;
+  height: 4.813rem;
+  /* UI Properties */
+  text-align: center;
+  letter-spacing: -0.027rem;
+  color: var(--color-secondary-SanJuanBlue);
+  opacity: 1;
+  font-size: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-style: var(--h2-DM);
+}
+ul {
+  display: flex;
+  flex-direction: column;
+}
+.access {
+  top: 46.063rem;
+  left: 6.5rem;
+  width: 10.5rem;
+  height: 3rem;
+  /* UI Properties */
+  border: 0.063rem solid var(--color-secondary-SanJuanBlue);
+  border-radius: 1.5rem;
+  opacity: 1;
+  background-color: #edf3f8;
+  cursor: pointer;
+  font-style: var(--body-sans);
+}
+
+
+.free-plan-prc,
+.basic-plan-prc,
+.premium-plan-prc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+hr {
+  width: 100%;
+}
+.container-prc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  font-family: var( --h3-Sans-small);
+}
+li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.625rem;
+  font-family: var( --h3-Sans-small);
+}
+li .checked{
+  color: var(--color-secondary-SanJuanBlue);
+}
+li.unchecked{
+  color: var(--color-secondary-SanJuanBlue);
+  opacity: 50%;
+}
+
+li.checked::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: var(--color-primary-DarkPink);
+  mask: url(../images/checkbox.svg) no-repeat center;
+
+}
