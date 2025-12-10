@@ -1,6 +1,6 @@
 @import url(../assets/variables.css);
 @import url(../images/checkbox.svg);
-   @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 
 .dm-serif-display-regular {
   font-family: "DM Serif Display", serif;
@@ -13,7 +13,7 @@
   font-weight: 400;
   font-style: italic;
 }
-img {
+.img {
   position: fixed;
   z-index: -1;
   top: -644px;
@@ -78,7 +78,7 @@ h1 {
   letter-spacing: -0.18px;
   color: var(--color-primary-DarkPink);
   opacity: 1;
-  font-family: "DM Serif Display", serif; ;
+  font-family: "DM Serif Display", serif;
   font-size: 24px;
   font-weight: 100;
 }
@@ -102,7 +102,6 @@ h1 {
   margin-bottom: 33px;
   margin-left: 24px;
   margin-right: 24px;
-  
 }
 .price {
   /* Layout Properties */
@@ -120,7 +119,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
   font-style: "DM Serif Display", serif;
-  
 }
 ul {
   display: flex;
@@ -142,7 +140,7 @@ ul {
   color: var(--color-secondary-SanJuanBlue);
   margin-bottom: 55px;
   font-weight: 850;
-  letter-spacing:-0.12px ;
+  letter-spacing: -0.12px;
 }
 .access:hover {
   background-color: var(--color-secondary-SanJuanBlue);
