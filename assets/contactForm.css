@@ -16,7 +16,7 @@ body {
   height: 780px;
   background-color: var(--color-secondary-SanJuanBlue-25);
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   bottom: 80%;
   left: 20%;
 }
@@ -125,6 +125,7 @@ body {
   border: var(--color-secondary-SanJuanBlue) 1px solid;
   border-radius: 24px;
   font: var(--body-sans);
+  font-weight: bold;
   color: var(--color-secondary-SanJuanBlue);
   letter-spacing: -0.115px;
 }
