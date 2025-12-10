@@ -1,15 +1,26 @@
 @import url(../assets/variables.css);
 @import url(../images/checkbox.svg);
+   @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: italic;
+}
 img {
-  
   position: fixed;
   z-index: -1;
-  top: -40.25rem;
-  left: 4.625rem;
-  width: 48.75rem;
-  height: auto;
+  top: -644px;
+  left: 74px;
+  width: 780px;
+  height: 780px;
+  /* UI Properties */
   opacity: 1;
 }
 body {
@@ -25,22 +36,22 @@ body {
   opacity: 1;
 }
 
-
-
 header,
 h1 {
   /* Layout Properties */
-  top: 8.063rem;
-  left: 1.5rem;
-  width: 20.438rem;
-  height: 2.75rem;
-
+  top: 129px;
+  left: 24px;
+  width: 327px;
+  height: 44px;
   /* UI Properties */
   text-align: center;
-  letter-spacing: -0.016rem;
+  letter-spacing: -0.43px;
   color: var(--color-secondary-SanJuanBlue);
   opacity: 1;
-  font-style: var(--h2-DM);
+  margin-bottom: 44px;
+  font-size: 32px;
+  font-weight: lighter;
+  font-family: "DM Serif Display", serif;
 }
 .free-plan,
 .basic-plan,
@@ -52,60 +63,68 @@ h1 {
   height: 12.313rem;
   /* UI Properties */
   opacity: 1;
+  margin-bottom: 9px;
 }
 .plan-one,
 .plan-two,
 .plan-three {
-  /* Layout Properties */
-  top: 13.563rem;
-  left: 1.5rem;
-  width: 20.438rem;
-  height: 2.063rem;
+  top: 217px;
+  left: 24px;
+  width: 327px;
+  height: 33px;
   /* UI Properties */
   text-align: center;
-  letter-spacing: -0.011rem;
+  letter-spacing: -0.18px;
   color: var(--color-primary-DarkPink);
   opacity: 1;
-  font-style: var(--h2-DM);
+  font-family: "DM Serif Display", serif; ;
+  font-size: 24px;
+  font-weight: 100;
 }
 .about-plan-one,
 .about-plan-two,
 .about-plan-three {
   /* Layout Properties */
-  top: 16.188rem;
-  left: 1.5rem;
-  width: 20.438rem;
-  height: 2.813rem;
+  top: 259px;
+  left: 24px;
+  width: 327px;
+  height: 45px;
   /* UI Properties */
   text-align: center;
-  font: normal normal 200 0.938rem/1.75rem Public Sans;
-  letter-spacing: 0rem;
+  font: normal normal 200 15px/28px var(--body-sans);
+  letter-spacing: 0px;
+  opacity: 1;
+  /* UI Properties */
   color: var(--color-secondary-LightSanJuanBlue);
   opacity: 1;
   display: flex;
-  align-items: center;
-font-family: var( --h3-Sans-small);
+  margin-bottom: 33px;
+  margin-left: 24px;
+  margin-right: 24px;
+  
 }
 .price {
   /* Layout Properties */
-  top: 21.063rem;
-  left: 1.5rem;
-  width: 20.438rem;
-  height: 4.813rem;
+  top: 337px;
+  left: 24px;
+  width: 327px;
+  height: 77px;
   /* UI Properties */
   text-align: center;
-  letter-spacing: -0.027rem;
+  letter-spacing: -0.43px;
   color: var(--color-secondary-SanJuanBlue);
   opacity: 1;
   font-size: 3.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-style: var(--h2-DM);
+  font-style: "DM Serif Display", serif;
+  
 }
 ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .access {
   top: 46.063rem;
@@ -120,8 +139,11 @@ ul {
   cursor: pointer;
   font-style: var(--body-sans);
   color: var(--color-secondary-SanJuanBlue);
+  margin-bottom: 55px;
+  font-weight: 850;
+  letter-spacing:-0.12px ;
 }
-.access:hover{
+.access:hover {
   background-color: var(--color-secondary-SanJuanBlue);
   color: var(--color-primary-LinkWaterWhite);
 }
@@ -134,7 +156,11 @@ ul {
   align-items: center;
 }
 hr {
-  width: 100%;
+  width: 327px;
+  height: 1px;
+  background-color: var(--color-secondary-SanJuanBlue);
+  border: none;
+  opacity: 25%;
 }
 .main-prc {
   display: flex;
@@ -145,18 +171,33 @@ hr {
 ul {
   list-style: none;
   padding-left: 0;
-  font-family: var( --h3-Sans-small);
+  font-family: var(--h3-Sans-small);
+
+  left: 121px;
+  width: 129px;
+  height: 235px;
+  /* UI Properties */
+  opacity: 1;
 }
+
 li {
-  position: relative;
-  padding-left: 1.25rem;
-  margin-bottom: 0.625rem;
-  font-family: var( --h3-Sans-small);
+  /*position: relative;*/
+  font: normal normal, var(--h3-Sans-small);
+  top: 446px;
+  left: 157px;
+  width: 93px;
+  height: 19px;
+  text-align: left;
+  letter-spacing: 0.7px;
+  color: var(--color-secondary-SanJuanBlue);
+  opacity: 1;
+  font-size: 16px;
+  font-weight: 10;
 }
-li .checked{
+li .checked {
   color: var(--color-secondary-SanJuanBlue);
 }
-li.unchecked{
+li.unchecked {
   color: var(--color-secondary-SanJuanBlue);
   opacity: 50%;
 }
@@ -164,12 +205,17 @@ li.unchecked{
 li.checked::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 50%;
+  /* Layout Properties */
+  width: 12px;
+  height: 8px;
+  display: flex;
+  overflow: hidden;
+  left: 121px;
+  right: 32px;
+  /* UI Properties */
+  border: 2px solid var(--color-primary-DarkPink);
+  opacity: 1;
   transform: translateY(-50%);
-  width: 1.25rem;
-  height: 1.25rem;
   background-color: var(--color-primary-DarkPink);
   mask: url(../images/checkbox.svg) no-repeat center;
-
 }
