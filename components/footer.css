@@ -30,7 +30,7 @@ a {
     position: absolute;
 }
 
-.bitmap-icon {
+ .bitmap-icon .img{
     object-fit: cover;
 }
 
@@ -52,7 +52,7 @@ a {
     mix-blend-mode: normal;
 }
 
-.pricing {
+.pricing-footer {
     top: calc(50% - 57.5px);
     left: 5.17%;
 }
