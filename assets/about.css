@@ -49,6 +49,14 @@
         margin-right: 23px;
     }
 
+    .about-main-picture{
+        width: 375px;
+        height: 300px;
+        background-image: url("/images/mobile_abpicture.png");
+
+        margin-bottom: 48px;
+    }
+
     .section-statistics{
         text-align: center;
 
