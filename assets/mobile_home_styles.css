@@ -2,13 +2,12 @@
 :root {
   --bg-top: #e7eef5;
   --bg-bottom: #d4dee9;
-  --card-shadow: 0 20px 60px rgba(54, 83, 107, 0.15);
-  --input-shadow: 0 8px 25px rgba(54, 83, 107, 0.15);
+  --card-shadow: 0 20px 60px #36536b26;
+  --input-shadow: 0 8px 25px #36536b26;
 }
 
 * {
   box-sizing: border-box;
-  max-width: 375px;
 }
 
 /* Page base styles: normal document flow so hero shows first */
@@ -24,6 +23,7 @@ body {
 /* Fixed-size mobile frame (375 x 760) */
 .artboard {
   position: relative;
+  width: 375px;
   height: 760px;
   margin: 0 auto 40px; /* center and add space before next section */
   overflow: hidden;
@@ -68,7 +68,7 @@ body {
 .hero__visual {
   position: absolute;
   top: 76px;
-  left: 155px;
+  left: 195px;
   transform: translateX(-50%);
   width: 180px;
   height: 340px;
@@ -118,6 +118,7 @@ h1 {
   height: 48px;
   padding: 0 24px;
   font: var(--body-sans);
+  font-weight: 700; 
   color: var(--color-secondary-SanJuanBlue);
   background: #ffffff;
   box-shadow: var(--input-shadow);
@@ -125,7 +126,8 @@ h1 {
 }
 
 .hero__form input::placeholder {
-  color: rgba(54, 83, 107, 0.55);
+  color: #36536b8c;
+  font-weight: 700; /* ensure placeholder appears same weight as in input field */
 }
 
 /* Hide the in-form button; we use a separate CTA */
@@ -147,21 +149,21 @@ h1 {
   color: #ffffff;
   font: 600 16px/20px "Public Sans", sans-serif;
   cursor: pointer;
-  box-shadow: 0 12px 35px rgba(186, 66, 112, 0.35);
+  box-shadow: 0 12px 35px #ba427059;
   transition: background-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease
 }
 
 /* Hover and disabled states to match design sheet */
 .hero__cta:hover {
   background: var(--color-secondary-CharmPink-Act);
-  box-shadow: 0 12px 35px rgba(218, 109, 151, 0.45);
+  box-shadow: 0 12px 35px #da6d9773;
 }
 
 .hero__cta:disabled,
 .hero__cta[disabled] {
   background: var(--color-secondary-CharmPink-Act);
   opacity: 0.55;
-  box-shadow: 0 12px 35px rgba(27, 38, 47, 0.12);
+  box-shadow: 0 12px 35px #1b262f1f;
   cursor: not-allowed;
 }
 
@@ -178,13 +180,10 @@ h1 {
   margin: 0;
 }
 
-/* Make Contact Us look like a link with an underline */
+/* Make Contact Us look like a link */
 .hero__help a {
   color: var(--color-secondary-SanJuanBlue);
   font-weight: 600;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  transition: border-color 0.2s ease;
 }
 
 .hero__help a:hover {
@@ -225,17 +224,19 @@ h1 {
   padding: 0 0 16px;
   min-height: 350px; /* shrink empty area below logos */
   position: relative;
+  width: 375px;
+  margin: 0 auto; /* center section to prevent overflow visuals */
   /* circle SVG sits behind the logos */
-  background-image: url('./bg-pattern-circle.svg');
+  background-image: url('../images/bg-pattern-circle.svg');
   background-repeat: no-repeat;
   background-position: top -160px left -149px; /* unchanged circle position */
   background-size: 700px 363px; /* unchanged circle size */
 }
 
 .clients__wrap {
-  width: 375px; /* same width as first page/artboard */
+  width: 375px; /* fixed artboard width */
   margin: 0 auto;
-  padding-top: 96px; /* tighter top spacing to reduce overall gap */
+  padding-top: 96px; /* fixed spacing */
 }
 
 .clients__row {
@@ -246,23 +247,25 @@ h1 {
   padding: 16px 24px; /* slightly tighter vertical spacing */
 }
 
-
-
-@media (min-width: 640px) {
-  .clients__wrap { width: 425px; }
+.client {
+  max-width: 160px;
+  height: auto;
 }
 
 /* Who we work with (text + button) */
 .partners {
   background: var(--color-secondary-MirageBlue);
   color: #ffffff;
-  padding: 32px 0 64px; /* top padding remains 0, tighten gap */
+  padding: 32px 0 64px; 
   margin-top: -4px;
   position: relative; /* enable overlay pseudo-element */
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto; /* center partners section */
 }
 
 .partners__wrap {
-  width: 327px;
+  width: 327px; /* fixed width */
   margin: 0 auto;
   text-align: center;
 }
@@ -296,9 +299,59 @@ h1 {
 }
 
 .partners__cta:hover {
-  background: rgba(251, 252, 254, 0.1);
+  background: #fbfcfe1a;
 }
 
-@media (min-width: 640px) {
-  .partners__wrap { width: 425px; }
+/* Easy to implement */
+.easy {
+  background: #EDF3F8;
+  color: var(--color-secondary-SanJuanBlue);
+  padding: 40px 0 60px;
+}
+
+.easy__wrap {
+  width: 375px; /* fixed width */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.easy__artboard {
+  width: 375px; 
+  height: 130px; 
+  margin: 0 auto 170px; 
+  position: relative;
+}
+
+.easy__img {
+  position: absolute;
+  top: -9px; /* lift above artboard to match visual */
+  left: 55%;
+  transform: translateX(-50%);
+  width: 458px; 
+  height: 329px; 
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px #36536b40);
+}
+
+.easy__title {
+  width: 327px; 
+  height: 49px; 
+  margin: 0 auto 16px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 37px; 
+  line-height: 49px; 
+  letter-spacing: -0.25px;
+  color: var(--color-secondary-SanJuanBlue);
+  position: relative;
+}
+
+.easy__text {
+  width: 328px; 
+  height: 101px; 
+  margin: 0 auto;
+  font: var(--body-sans);
+  color: var(--color-secondary-LightSanJuanBlue);
+  line-height: 22px;
+  overflow: hidden; /* enforce visual box height */
 }
