@@ -13,7 +13,7 @@
   font-weight: 400;
   font-style: italic;
 }
-img {
+.img {
   position: fixed;
   z-index: -1;
   top: -644px;
@@ -141,6 +141,7 @@ ul {
   font-style: var(--body-sans);
   color: var(--color-secondary-SanJuanBlue);
   margin-bottom: 55px;
+  margin-top: 15px;
   font-weight: 850;
   letter-spacing:-0.12px ;
 }
@@ -174,10 +175,11 @@ ul {
   list-style: none;
   padding-left: 0;
   font-family: var(--h3-Sans-small);
-
+margin-top: 27px;
   left: 121px;
   width: 129px;
   height: 235px;
+  margin-bottom: 15px;
   /* UI Properties */
   opacity: 1;
 }
@@ -205,19 +207,18 @@ li.unchecked {
 }
 
 li.checked::before {
+
   content: "";
   position: absolute;
   /* Layout Properties */
   width: 12px;
   height: 8px;
-  display: flex;
   overflow: hidden;
-  left: 121px;
+  left: 97px;
   right: 32px;
   /* UI Properties */
   border: 2px solid var(--color-primary-DarkPink);
   opacity: 1;
-  transform: translateY(-50%);
   background-color: var(--color-primary-DarkPink);
   mask: url(../images/checkbox.svg) no-repeat center;
 }
