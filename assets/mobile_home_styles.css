@@ -355,3 +355,41 @@ h1 {
   line-height: 22px;
   overflow: hidden; /* enforce visual box height */
 }
+
+/* Easy section: two phones below the text */
+.easy__phones {
+  width: 327px;
+  margin: 8px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: -5px;
+}
+
+.easy__caption {
+  width: 327px;
+  margin: 12px auto 0;
+  text-align: center;
+}
+
+.easy__caption-title {
+  font-size: 36px;
+  font-family: "DM Serif Display-Regular", serif;
+  line-height: 36px;
+  letter-spacing: 0.18px;
+  color: #36536b;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+
+.easy__caption-text {
+  font-size: 15px;
+  line-height: 28px;
+  color: #6c8294;
+  margin: 0;
+}
+
+.easy__phone {
+  width: 180px;
+  height: auto;
+  filter: drop-shadow(0 12px 24px #36536b33);
+}

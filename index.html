@@ -7,8 +7,23 @@
     <link rel="stylesheet" href="assets/variables.css" />
     <link rel="stylesheet" href="assets/mobile_home_styles.css" />
     <link rel="stylesheet" href="components/footer.css" />
+    <link rel="stylesheet" href="components/mobile-menu.css" />
   </head>
   <body>
+    <!-- Navigator (mobile menu) -->
+    <div class="bitmap-parent parent">
+      <img id="bitmap-icon3" src="images/group_mb_open.svg" class="bitmap-icon3" alt="open menu">
+      <nav id="bitmap-group" class="bitmap-group">
+        <img id="group-icon" src="images/group_mb_close.svg" class="group-icon" alt="close menu">
+        <b class="pricing"><a href="pages/mobile_pricing.html">Pricing</a></b>
+        <b class="about"><a href="pages/mobile_about.html">About</a></b>
+        <b class="contact"><a href="pages/mobile_contact.html">Contact</a></b>
+        <div class="group-2-copy3">
+          <div class="rectangle5"></div>
+          <b class="schedule-a-demo2"><a href="#demo">Schedule a Demo</a></b>
+        </div>
+      </nav>
+    </div>
     <div class="artboard">
       <main class="hero">
         <figure class="hero__visual">
@@ -87,6 +102,14 @@
         Our API comes with just a few lines of code. You’ll be up and running in no time.
         We built our documentation page to integrate payments functionality with ease.
       </p>
+      <div class="easy__phones" aria-label="Phone previews">
+        <img class="easy__phone" src="images/mobilephone2.svg" alt="Phone preview 2">
+        <img class="easy__phone" src="images/mobilephone3.svg" alt="Phone preview 3">
+      </div>
+        <div class="easy__caption">
+          <h3 class="easy__caption-title">Simple UI &amp; UX</h3>
+          <p class="easy__caption-text">Our pre-built form is easy to integrate in your app or website’s checkout flow and designed to optimize conversion.</p>
+        </div>
     </div>
   </section>
     <footer class="bitmap-parent">
@@ -116,4 +139,5 @@
       </div>
     </footer>
   </body>
+  <script src="components/mobile-menu.js" defer></script>
 </html>
