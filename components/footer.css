@@ -15,7 +15,7 @@ a {
     color: inherit;
 }
 
-.bitmap-parent {
+.bitmap-parent-footer {
     width: 100%;
     align-self: center;
     height: 22.063rem;
@@ -26,15 +26,15 @@ a {
     background-image: url(./bitmap.png);
 }
 
-.bitmap-parent * {
+.bitmap-parent-footer * {
     position: absolute;
 }
 
- .bitmap-icon .img{
+ .bitmap-icon-footer .img{
     object-fit: cover;
 }
 
-.group-child {
+.group-child-footer {
     top: 2.563rem;
     left: 7.5rem;
     width: 8.438rem;
@@ -42,7 +42,7 @@ a {
     object-fit: cover;
 }
 
-.pricing-parent {
+.pricing-parent-footer {
     top: 7.438rem;
     left: 9.938rem;
     width: 3.625rem;
@@ -57,38 +57,38 @@ a {
     left: 5.17%;
 }
 
-.about {
+.about-footer {
     top: calc(50% - 8.5px);
     left: 12.07%;
 }
 
-.contact {
+.contact-footer {
     top: calc(50% + 40.5px);
     left: 0%;
 }
 
-.path-parent {
+.path-parent-footer {
     top: 17.125rem;
     left: 8rem;
     width: 7.5rem;
     height: 1.5rem;
 }
 
-.path-icon {
+.path-icon-footer {
     top: 0rem;
     left: 0rem;
     width: 1.5rem;
     height: 1.5rem;
 }
 
-.path-icon2 {
+.path-icon2-footer {
     top: 0.141rem;
     left: 3rem;
     width: 1.5rem;
     height: 1.219rem;
 }
 
-.shape-icon {
+.shape-icon-footer {
     top: 0rem;
     left: 6rem;
     width: 1.5rem;
