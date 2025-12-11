@@ -71,8 +71,10 @@ body {
   color: var(--color-error);
   font: var(--error-text);
   letter-spacing: 0.085px;
-
   padding-left: 20px;
+  top: 7px;
+  padding-bottom: 5px;
+  position: relative;
 }
 
 .form__input.error,
