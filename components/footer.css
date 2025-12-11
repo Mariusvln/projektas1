@@ -1,96 +1,96 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    max-width: 375px;
-    margin: 0;
-    line-height: normal;
+  max-width: 375px;
+  margin: 0;
+  line-height: normal;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-.bitmap-parent-footer {
-    width: 100%;
-    align-self: center;
-    height: 22.063rem;
-    position: relative;
-    font-size: 0.938rem;
-    color: #fbfcfe;
-    font-family: 'Public Sans';
-    background-image: url(./bitmap.png);
+.bitmap-parent {
+  width: 100%;
+  align-self: center;
+  height: 22.063rem;
+  position: relative;
+  font-size: 0.938rem;
+  color: #fbfcfe;
+  font-family: "Public Sans";
+  background-image: url(./bitmap.png);
 }
 
-.bitmap-parent-footer * {
-    position: absolute;
+.bitmap-parent * {
+  position: absolute;
 }
 
- .bitmap-icon-footer .img{
-    object-fit: cover;
+.bitmap-icon .img {
+  object-fit: cover;
 }
 
-.group-child-footer {
-    top: 2.563rem;
-    left: 7.5rem;
-    width: 8.438rem;
-    height: 2.375rem;
-    object-fit: cover;
+.group-child {
+  top: 2.563rem;
+  left: 7.5rem;
+  width: 8.438rem;
+  height: 2.375rem;
+  object-fit: cover;
 }
 
-.pricing-parent-footer {
-    top: 7.438rem;
-    left: 9.938rem;
-    width: 3.625rem;
-    height: 7.188rem;
-    overflow: hidden;
-    opacity: 0.7;
-    mix-blend-mode: normal;
+.pricing-parent {
+  top: 7.438rem;
+  left: 9.938rem;
+  width: 3.925rem;
+  height: 7.188rem;
+  overflow: hidden;
+
+  mix-blend-mode: normal;
 }
 
-.pricing-footer {
-    top: calc(50% - 57.5px);
-    left: 5.17%;
+.pricing {
+  top: calc(50% - 57.5px);
+  left: 5.17%;
 }
 
-.about-footer {
-    top: calc(50% - 8.5px);
-    left: 12.07%;
+.about {
+  top: calc(50% - 8.5px);
+  left: 12.07%;
 }
 
-.contact-footer {
-    top: calc(50% + 40.5px);
-    left: 0%;
+.contact {
+  top: calc(50% + 40.5px);
+  left: 0%;
 }
 
-.path-parent-footer {
-    top: 17.125rem;
-    left: 8rem;
-    width: 7.5rem;
-    height: 1.5rem;
+.path-parent {
+  top: 17.125rem;
+  left: 8rem;
+  width: 7.5rem;
+  height: 1.5rem;
 }
 
-.path-icon-footer {
-    top: 0rem;
-    left: 0rem;
-    width: 1.5rem;
-    height: 1.5rem;
+.path-icon {
+  top: 0rem;
+  left: 0rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
-.path-icon2-footer {
-    top: 0.141rem;
-    left: 3rem;
-    width: 1.5rem;
-    height: 1.219rem;
+.path-icon2 {
+  top: 0.141rem;
+  left: 3rem;
+  width: 1.5rem;
+  height: 1.219rem;
 }
 
-.shape-icon-footer {
-    top: 0rem;
-    left: 6rem;
-    width: 1.5rem;
-    height: 1.5rem;
-} 
+.shape-icon {
+  top: 0rem;
+  left: 6rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
