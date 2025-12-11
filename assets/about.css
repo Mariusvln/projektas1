@@ -7,10 +7,10 @@
 
     .page-header__grey-ball {
     width: 780px;
-    height: 780px;
+    height: 680px;
     background-color: var(--color-secondary-SanJuanBlue-25);
     border-radius: 50%;
-    position: fixed;
+    position: relative;
     bottom: 85%;
     left: 20%;
     }

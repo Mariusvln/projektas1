@@ -14,9 +14,9 @@
   font-style: italic;
 }
 .img {
-  position: fixed;
+  position: relative;
   z-index: -1;
-  top: -644px;
+  top: 44px;
   left: 74px;
   width: 780px;
   height: 780px;
