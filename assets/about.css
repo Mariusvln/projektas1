@@ -4,6 +4,17 @@
         min-height: 100vh;
         background: #EDF3F8 0% 0% no-repeat padding-box;
     }
+
+    .page-header__grey-ball {
+    width: 780px;
+    height: 780px;
+    background-color: var(--color-secondary-SanJuanBlue-25);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 85%;
+    left: 20%;
+    }
+
     h1 {
         color: var(--color-secondary-SanJuanBlue);
         /* font-family: var(--h1-DM-large); */
