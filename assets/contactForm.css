@@ -9,8 +9,13 @@ body {
   margin-bottom: 2rem;
 }
 .page-header {
-  padding-block: 40px;
+  padding-block: 160px 40px;
   padding-inline: 24px;
+  position: relative;
+  --ball-size: 720px;
+  --ball-height: var(--ball-size);
+  --ball-top: -240px;
+  --ball-right: -260px;
 }
 .page-header__text {
   font: var(--h3-DM-large);
@@ -18,13 +23,13 @@ body {
   text-align: center;
 }
 .page-header__grey-ball {
-  width: 780px;
-  height: 780px;
+  width: 480px;
+  height: 390px;
   background-color: var(--color-secondary-SanJuanBlue-25);
   border-radius: 50%;
-  position: fixed;
-  bottom: 80%;
-  left: 20%;
+  position: absolute;
+  top: -240px;
+  right: var(--ball-right);
 }
 
 .form {
