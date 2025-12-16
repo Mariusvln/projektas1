@@ -247,16 +247,16 @@ h1 {
 }
 
 .clients__wrap {
-  width: 375px; /* fixed artboard width */
+  width: 375px; /*fixed artboard width*/
   margin: 0 auto;
-  padding-top: 96px; /* fixed spacing */
+  padding-top: 96px; /*fixed spacing */
 }
 
 .clients__row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  justify-content: center;
+  gap: 70px;
   padding: 16px 24px; /* slightly tighter vertical spacing */
 }
 
