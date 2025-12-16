@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+  .page-main {
+    padding-inline: 97px;
+   
+  }
+  .page-header__text {
+    font: var(--h2-DM);
+    padding-left: 97px;
+    padding-bottom: 54px;
+    width: 573px;
+  }
+}
