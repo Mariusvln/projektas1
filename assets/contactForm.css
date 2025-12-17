@@ -171,7 +171,6 @@ body {
 
 @media (min-width: 768px) {
   .clients_logo .clients__wrap {
-    width: 50%;
     grid-template-columns: repeat(3, 1fr);
     padding-top: 40px;
     justify-items: center;
