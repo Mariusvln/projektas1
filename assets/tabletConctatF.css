@@ -2,14 +2,20 @@
   body {
     max-width: 768px;
   }
+  .page-container {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+  }
   .page-main {
     padding-inline: 97px;
-   
+  }
+  .page-header{
+    padding-bottom: 0;
   }
   .page-header__text {
     font: var(--h2-DM);
-    padding-left: 97px;
     padding-bottom: 54px;
-    width: 573px;
+   padding-inline: 97px;
   }
 }
