@@ -15,80 +15,91 @@
   </head>
   <body>
     <!-- Navigator (mobile menu) -->
-    <header class="page-header">
-      <div class="page-header__grey-ball"></div>
-      <h3 class="page-header__text">
-        Submit a help request and we'll get in touch shortly.
-      </h3>
-    </header>
+    <div class="page-container">
+      <header class="page-header">
+        <!-- <div class="page-header__grey-ball"></div> LATER -->
+        <h3 class="page-header__text">
+          Submit a help request and we'll get in touch shortly.
+        </h3>
+      </header>
 
-    <main class="page-main">
-      <section>
-        <form class="form" id="contactForm">
-          <div class="form__group">
-            <input
-              type="text"
-              class="form__input"
-              placeholder="Name"
-              id="name"
+      <main class="page-main">
+        <section>
+          <form class="form" id="contactForm">
+            <div class="form__group">
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Name"
+                id="name"
+              />
+              <p class="form__error" id="name-error"></p>
+            </div>
+
+            <div class="form__group">
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Email Address"
+                id="email"
+              />
+              <p class="form__error" id="email-error"></p>
+            </div>
+
+            <div class="form__group">
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Company Name"
+              />
+            </div>
+
+            <div class="form__group">
+              <input type="text" class="form__input" placeholder="Title" />
+            </div>
+
+            <div class="form__group">
+              <textarea
+                class="form__textarea"
+                placeholder="Message"
+                id="message"
+              ></textarea>
+              <p class="form__error" id="message-error"></p>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" class="form-checkbox__input" />
+              <span class="form-checkbox__custom"></span>
+              <span class="form-checkbox__text">
+                Stay up-to-date with company announcements and updates to our
+                API
+              </span>
+            </div>
+            <button type="submit" class="form__button">Submit</button>
+          </form>
+        </section>
+        <section class="clients_logo">
+          <h4 class="client-text">
+            Join the thousands of innovators already building with us
+          </h4>
+          <div class="clients__wrap">
+            <img class="client" src="/images/tesla-dark.svg" alt="Tesla" />
+            <img
+              class="client"
+              src="/images/microsoft-dark.svg"
+              alt="Microsoft"
             />
-            <p class="form__error" id="name-error"></p>
-          </div>
-
-          <div class="form__group">
-            <input
-              type="text"
-              class="form__input"
-              placeholder="Email Address"
-              id="email"
+            <img
+              class="client"
+              src="/images/hp-dark.svg"
+              alt="Hewlett Packard"
             />
-            <p class="form__error" id="email-error"></p>
+            <img class="client" src="/images/oracle-dark.svg" alt="Oracle" />
+            <img class="client" src="/images/google-dark.svg" alt="Google" />
+            <img class="client" src="/images/nvidia-dark.svg" alt="NVIDIA" />
           </div>
-
-          <div class="form__group">
-            <input type="text" class="form__input" placeholder="Company Name" />
-          </div>
-
-          <div class="form__group">
-            <input type="text" class="form__input" placeholder="Title" />
-          </div>
-
-          <div class="form__group">
-            <textarea
-              class="form__textarea"
-              placeholder="Message"
-              id="message"
-            ></textarea>
-            <p class="form__error" id="message-error"></p>
-          </div>
-          <div class="form-checkbox">
-            <input type="checkbox" class="form-checkbox__input" />
-            <span class="form-checkbox__custom"></span>
-            <span class="form-checkbox__text">
-              Stay up-to-date with company announcements and updates to our API
-            </span>
-          </div>
-          <button type="submit" class="form__button">Submit</button>
-        </form>
-      </section>
-      <section class="clients_logo">
-        <h4 class="client-text">
-          Join the thousands of innovators already building with us
-        </h4>
-        <div class="clients__wrap">
-          <img class="client" src="/images/tesla-dark.svg" alt="Tesla" />
-          <img
-            class="client"
-            src="/images/microsoft-dark.svg"
-            alt="Microsoft"
-          />
-          <img class="client" src="/images/hp-dark.svg" alt="Hewlett Packard" />
-          <img class="client" src="/images/oracle-dark.svg" alt="Oracle" />
-          <img class="client" src="/images/google-dark.svg" alt="Google" />
-          <img class="client" src="/images/nvidia-dark.svg" alt="NVIDIA" />
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </div>
     <footer class="bitmap-parent">
       <img
         src="../images/./bitmap.png"

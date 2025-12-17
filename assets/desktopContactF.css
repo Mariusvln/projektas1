@@ -3,19 +3,21 @@
     max-width: 1440px;
     padding: 0;
   }
+  .page-container {
+    max-width: 1440px;
+    padding-inline: 165px;
+  }
   .page-main {
     padding-inline: 0;
-    padding-left: 165px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
+    gap: 125px;
     align-items: start;
   }
   .page-header__text {
     font: var(--h1-DM-small);
     padding-bottom: 43px;
     padding-inline: 0;
-    padding-left: 165px;
     width: 830px;
     text-align: left;
   }
@@ -27,7 +29,6 @@
     width: 445px;
   }
   .clients_logo .clients__wrap {
-
     padding: 40px 0;
   }
 }
