@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+  .page-container {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .page-main {
+    padding-inline: 97px;
+  }
+  .page-header{
+    padding-bottom: 0;
+  }
+  .page-header__text {
+    font: var(--h2-DM);
+    padding-bottom: 54px;
+   padding-inline: 97px;
+  }
+}
