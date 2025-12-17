@@ -227,14 +227,15 @@ li.unchecked {
 }
 
 li.checked::before {
-
+  display: block;
   content: "";
-  position: absolute;
+  position: relative;
   /* Layout Properties */
   width: 12px;
   height: 8px;
   overflow: hidden;
-  left: 97px;
+  left: -35px;
+  top: +15px;
   right: 32px;
   /* UI Properties */
   border: 2px solid var(--color-primary-DarkPink);
@@ -389,6 +390,11 @@ height: 780px;
 opacity: 1;
  
   }
+
+.pink-checkbox{
+  position: relative;
+  top: 10px;
+}
 }
 
 
