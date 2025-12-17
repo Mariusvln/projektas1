@@ -19,7 +19,7 @@
   right: -260px;
   width: 480px;
   height: 390px;
-  z-index: 1;      
+  z-index: 1;
   pointer-events: none;
   opacity: 1;
 }
@@ -27,7 +27,7 @@ body {
   /* Layout Properties */
   background-color: #edf3f8;
   overflow-y: auto;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   top: 0rem;
   left: 0rem;
   /* width: 23.438rem; */
@@ -36,16 +36,15 @@ body {
   background: var() 0% 0% no-repeat padding-box;
   opacity: 1;
   max-width: 375px;
-  position: relative; 
+  position: relative;
   z-index: 0;
-  padding-top: 160px; 
- 
+  padding-top: 160px;
+
   --ball-size: 480px;
   --ball-height: 390px;
   --ball-top: -240px;
   --ball-right: -260px;
 }
-
 
 body::before {
   content: "";
@@ -195,7 +194,7 @@ ul {
   list-style: none;
   padding-left: 0;
   font-family: var(--h3-Sans-small);
-margin-top: 27px;
+  margin-top: 27px;
   left: 121px;
   width: 129px;
   height: 235px;
@@ -227,7 +226,6 @@ li.unchecked {
 }
 
 li.checked::before {
-
   content: "";
   position: absolute;
   /* Layout Properties */
@@ -243,12 +241,11 @@ li.checked::before {
   mask: url(../images/checkbox.svg) no-repeat center;
 }
 @media (min-width: 1440px) {
-
- body {
-  max-width: 1440px;
-  margin: 0 auto;
-  height: auto;
-}
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: auto;
+  }
 
   header h1 {
     grid-column: 1 / -1;
@@ -257,52 +254,49 @@ li.checked::before {
   }
 
   .main-prc {
-   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows:
-    auto   
-    auto   
-    auto   
-    auto   
-    auto   
-    auto;  
-  gap: 30px 49px;
-  max-width: 1100px;
-  margin: auto 160px;
-  align-items: start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:
+      auto
+      auto
+      auto
+      auto
+      auto
+      auto;
+    gap: 30px 49px;
+    max-width: 1100px;
+    margin: auto 160px;
+    align-items: start;
   }
-.free-plan {
-  grid-column: 1;
-  grid-row: 2;
-}
+  .free-plan {
+    grid-column: 1;
+    grid-row: 2;
+  }
 
-.basic-plan {
-  grid-column: 2;
-  grid-row: 2;
-}
+  .basic-plan {
+    grid-column: 2;
+    grid-row: 2;
+  }
 
-.premium-plan {
-  grid-column: 3;
-  grid-row: 2;
-}
+  .premium-plan {
+    grid-column: 3;
+    grid-row: 2;
+  }
 
+  .free-plan-prc {
+    grid-column: 1;
+    grid-row: 3;
+  }
 
-.free-plan-prc {
-  grid-column: 1;
-  grid-row: 3;
-}
+  .basic-plan-prc {
+    grid-column: 2;
+    grid-row: 3;
+  }
 
-.basic-plan-prc {
-  grid-column: 2;
-  grid-row: 3;
-}
-
-.premium-plan-prc {
-  grid-column: 3;
-  grid-row: 3;
-}
-
-
+  .premium-plan-prc {
+    grid-column: 3;
+    grid-row: 3;
+  }
 
   .access:nth-of-type(1) {
     grid-column: 1;
@@ -341,39 +335,194 @@ li.checked::before {
     font-size: 56px;
     margin-bottom: 40px;
   }
-  
 
   .main-prc ul.prices {
-  grid-row: 4;          
-  justify-self: center;
-  
+    grid-row: 4;
+    justify-self: center;
+  }
 }
 
-  }
+hr {
+  width: 100%;
+  max-width: 350px;
+  margin: 32px auto;
+}
 
-  hr {
-    width: 100%;
-    max-width: 350px;
-    margin: 32px auto;
-  }
+.access {
+  width: 168px;
+  margin-top: 32px;
+}
 
-  .access {
-    width: 168px;
-    margin-top: 32px;
-  }
-
-  body::before {
-    top: -527px;
-    left: 800px;
-    width: 780px;
-    height: 780px;
-    opacity: 1;
-  }
-  .free-plan ul.prices,
+body::before {
+  top: -527px;
+  left: 800px;
+  width: 780px;
+  height: 780px;
+  opacity: 1;
+}
+.free-plan ul.prices,
 .basic-plan ul.prices,
 .premium-plan ul.prices {
   grid-row: 4;
 }
+/*//TABLET//*/
 
 
+@media (min-width: 768px) {
+  *,
+*::before,
+*::after{
+box-sizing: border-box;
+}
+  body {
+    max-width: 768px;
+    margin: 0 auto;
+    height: auto;
+  }
 
+  header h1 {
+   margin-left: 120px;
+    text-align: center;
+    font-size: 48px;
+    /* Layout Properties */
+    top: 169px;
+    left: 215px;
+    width: 339px;
+    height: 66px;
+    /* UI Properties */
+    text-align: center;
+    letter-spacing: -0.37px;
+    color: var(--color-secondary-SanJuanBlue);
+    opacity: 1;
+  }
+
+  .main-prc {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows:
+      auto
+      auto
+      auto
+      auto
+      auto
+      auto;
+  
+   column-gap: 260px;
+   row-gap: 70px;
+   padding: 135px;
+    
+    
+  }
+  .free-plan {
+    grid-column: 1;
+    grid-row: 2;
+    
+  }
+
+  .basic-plan {
+    grid-column: 2;
+    grid-row: 2;
+    
+  }
+
+  .premium-plan {
+    grid-column: 3;
+    grid-row: 2;
+   
+  }
+
+  .free-plan-prc {
+    grid-column: 1;
+    grid-row: 3;
+     
+  }
+
+  .basic-plan-prc {
+    grid-column: 2;
+    grid-row: 3;
+     
+  }
+
+  .premium-plan-prc {
+    grid-column: 3;
+    grid-row: 3;
+    
+  }
+
+  .access:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 5;
+    justify-self: center;
+     
+  }
+
+  .access:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 5;
+    justify-self: center;
+     
+  }
+
+  .access:nth-of-type(3) {
+    grid-column: 3;
+    grid-row: 5;
+    justify-self: center;
+  }
+
+  .plan-one,
+  .plan-two,
+  .plan-three {
+    font-size: 24px;
+    /* Layout Properties */
+    /* UI Properties */
+    text-align: center;
+    letter-spacing: -0.18px;
+    color: var(--color-primary-DarkPink);
+    opacity: 1;
+    
+  }
+
+  .about-plan-one,
+  .about-plan-two,
+  .about-plan-three {
+    
+   
+    font-size: 15px;
+    top: 341px;
+    left: 38px;
+    width: 225px;
+    height: 73px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal 200 15px/28px var(--body-sans);
+    letter-spacing: 0px;
+    color: var(--color-secondary-LightSanJuanBlue);
+    opacity: 1;
+    line-height: 27px;
+  }
+
+  .price {
+    font-size: 48px;
+    /* UI Properties */
+    text-align: center;
+    letter-spacing: -0.37px;
+    color: var(--color-secondary-SanJuanBlue);
+    opacity: 1;
+  }
+
+  .main-prc ul.prices {
+    /* Layout Properties */
+    top: 564px;
+    left: 120px;
+    width: 93px;
+    height: 19px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 200 16px/28px var(--body-sans);
+    letter-spacing: 0px;
+    color: var(--color-secondary-LightSanJuanBlue);
+    opacity: 1;
+    grid-row: 4;
+    justify-self: center;
+  }
+}
