@@ -130,17 +130,17 @@ a {
     height: 2.375rem;
   }
 
-  .pricing-parent {
+  .pricing-parent.tablet {
     height: 100%;
     width: 69%;
     top: 0.1%;
-    left: 26%;
+    left: 14.88rem;
     right: 0;
     bottom: 0%;
     font-size: 0.9375rem;
   }
 
-  .pricing {
+  .pricing.tablet {
     top: calc(50% - 8px);
     left: 0;
     opacity: 0.7;
@@ -148,17 +148,17 @@ a {
     height: 33%;
   }
 
-  .about.dtop {
+  .about.tablet {
     top: calc(50% - 8px);
-    left: 25%;
+    left: 16.5%;
     opacity: 0.7;
     width: 33%;
     height: 33%;
   }
 
-  .contact.dtop {
+  .contact.tablet {
     top: calc(50% - 8px);
-    left: 40%;
+    left: 33%;
     opacity: 0.7;
     width: 33%;
     height: 33%;
@@ -224,7 +224,7 @@ a {
     height: 2.375rem;
   }
 
-  .pricing-parent {
+  .pricing-parent.dtop {
     height: 100%;
     width: 31.25%;
     top: 0.1%;
@@ -234,7 +234,7 @@ a {
     font-size: 0.9375rem;
   }
 
-  .pricing {
+  .pricing.dtop {
     top: calc(50% - 8px);
     left: 12%;
     opacity: 0.7;
