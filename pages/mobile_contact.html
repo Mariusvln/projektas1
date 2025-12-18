@@ -7,81 +7,133 @@
     <link rel="stylesheet" href="../assets/contactForm.css" />
     <link rel="stylesheet" href="../assets/variables.css" />
     <link rel="stylesheet" href="../components/footer.css" />
-    <script src="../contactForm.js" defer></script>
+    <script src="/pages/contactForm.js" defer></script>
     <link rel="stylesheet" href="../components/mobile-menu.css" />
+    <link rel="stylesheet" href="/assets/tabletConctatF.css" />
+    <link rel="stylesheet" href="/assets/desktopContactF.css" />
+    <link rel="stylesheet" href="../assets/mobile_home_styles.css" />
   </head>
   <body>
     <!-- Navigator (mobile menu) -->
-    <header class="page-header">
-      <div class="page-header__grey-ball"></div>
-      <h3 class="page-header__text">
-        Submit a help request and we'll get in touch shortly.
-      </h3>
-    </header>
+    <div class="page-container">
+      <header class="page-header">
+        <!-- <div class="page-header__grey-ball"></div> LATER -->
+        <h3 class="page-header__text">
+          Submit a help request and we'll get in touch shortly.
+        </h3>
+      </header>
 
-    <main class="page-main">
-      <section>
-        <form class="form" id="contactForm">
-          <div class="form__group">
-            <input
-              type="text"
-              class="form__input"
-              placeholder="Name"
-              id="name"
+      <main class="page-main">
+        <section>
+          <form class="form" id="contactForm">
+            <div class="form__group">
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Name"
+                id="name"
+              />
+              <p class="form__error" id="name-error"></p>
+            </div>
+
+            <div class="form__group">
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Email Address"
+                id="email"
+              />
+              <p class="form__error" id="email-error"></p>
+            </div>
+
+            <div class="form__group">
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Company Name"
+              />
+            </div>
+
+            <div class="form__group">
+              <input type="text" class="form__input" placeholder="Title" />
+            </div>
+
+            <div class="form__group">
+              <textarea
+                class="form__textarea"
+                placeholder="Message"
+                id="message"
+              ></textarea>
+              <p class="form__error" id="message-error"></p>
+            </div>
+            <div class="form-checkbox">
+              <input type="checkbox" class="form-checkbox__input" />
+              <span class="form-checkbox__custom"></span>
+              <span class="form-checkbox__text">
+                Stay up-to-date with company announcements and updates to our
+                API
+              </span>
+            </div>
+            <button type="submit" class="form__button">Submit</button>
+          </form>
+        </section>
+        <section class="clients_logo">
+          <h4 class="client-text">
+            Join the thousands of innovators already building with us
+          </h4>
+          <div class="clients__wrap">
+            <img class="client" src="/images/tesla-dark.svg" alt="Tesla" />
+            <img
+              class="client"
+              src="/images/microsoft-dark.svg"
+              alt="Microsoft"
             />
-            <p class="form__error" id="name-error"></p>
-          </div>
-
-          <div class="form__group">
-            <input
-              type="text"
-              class="form__input"
-              placeholder="Email Address"
-              id="email"
+            <img
+              class="client"
+              src="/images/hp-dark.svg"
+              alt="Hewlett Packard"
             />
-            <p class="form__error" id="email-error"></p>
+            <img class="client" src="/images/oracle-dark.svg" alt="Oracle" />
+            <img class="client" src="/images/google-dark.svg" alt="Google" />
+            <img class="client" src="/images/nvidia-dark.svg" alt="NVIDIA" />
           </div>
+        </section>
+      </main>
+      <section class="ready-to-start_component">
+        <div class="ready-to-start-contact">
+          <div>
+            <h2 class="title-to-start-contact">Ready to start?</h2>
+            <div class="input-container-contact">
+              <input
+                class="input-to-start-contact"
+                type="text"
+                ,
+                placeholder="Enter email adress"
+              />
 
-          <div class="form__group">
-            <input type="text" class="form__input" placeholder="Company Name" />
+              <button class="btn-primary-light-contact">
+                <span class="schedule-contact">Schedule a DEMO</span>
+              </button>
+            </div>
           </div>
-
-          <div class="form__group">
-            <input type="text" class="form__input" placeholder="Title" />
-          </div>
-
-          <div class="form__group">
-            <textarea
-              class="form__textarea"
-              placeholder="Message"
-              id="message"
-            ></textarea>
-            <p class="form__error" id="message-error"></p>
-          </div>
-          <div class="form-checkbox">
-            <input type="checkbox" class="form-checkbox__input" />
-            <span class="form-checkbox__custom"></span>
-            <span class="form-checkbox__text">
-              Stay up-to-date with company announcements and updates to our API
-            </span>
-          </div>
-          <button type="submit" class="form__button">Submit</button>
-        </form>
+        </div>
       </section>
-    </main>
-    <footer class="bitmap-parent">
-      <img
-        src="../images/./bitmap.png"
-        class="bitmap-icon"
-        alt="background img"
-      />
-      <a href="../index.html"
+    </div>
+
+     <footer class="bitmap-parent">
+      <a href="../pages/mobile_home.html"
         ><img src="../images/Group 21.png" class="group-child" alt="logo"
       /></a>
       <div class="pricing-parent">
-        <b class="pricing"><a href="./mobile_pricing.html">Pricing</a></b>
-        <b class="about"><a href="./mobile_about.html">About</a></b>
-        <b class="contact"><a href="./mobile_contact.html">Contact</a></b>
+        <b class="pricing dtop"
+          ><a href="../pages/mobile_pricing.html">Pricing</a></b
+        >
+        <b class="about dtop"
+          ><a href="../pages/mobile_about.html">About</a></b
+        >
+        <b class="contact dtop"
+          ><a href="../pages/mobile_contact.html">Contact</a></b
+        >
       </div>
       <div class="path-parent">
         <a href="#"
