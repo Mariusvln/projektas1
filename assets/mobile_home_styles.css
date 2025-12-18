@@ -411,10 +411,11 @@ h1 {
 .finance__circles {
   padding-top: 80px;
   padding-inline: 24px;
+ 
 }
 .finance__circle-banking,
 .finance__circle-payments {
-  padding-top: 48px;
+  padding-top: 40px;
 }
 .finance__circle-name {
   letter-spacing: -0.138px;
