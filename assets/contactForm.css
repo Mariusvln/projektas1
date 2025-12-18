@@ -141,6 +141,7 @@ body {
   font: var(--body-sans);
   font-weight: bold;
   color: var(--color-secondary-SanJuanBlue);
+  background-color: var(--color-background);
   letter-spacing: -0.115px;
 }
 
