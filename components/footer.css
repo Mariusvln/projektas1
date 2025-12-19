@@ -48,7 +48,7 @@ a {
   width: 3.925rem;
   height: 7.188rem;
   overflow: hidden;
-
+  font-weight: 400;
   mix-blend-mode: normal;
 }
 
@@ -60,6 +60,7 @@ a {
 .about {
   top: calc(50% - 8.5px);
   left: 12.07%;
+  transform: translateX(4px);
 }
 
 .contact {
