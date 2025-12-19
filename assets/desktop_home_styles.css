@@ -1,0 +1,673 @@
+/* Theme tokens used across the mobile hero */
+:root {
+  --bg-top: #e7eef5;
+  --bg-bottom: #d4dee9;
+  --card-shadow: 0 20px 60px #36536b26;
+  --input-shadow: 0 8px 25px #36536b26;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Page base styles: normal document flow so hero shows first */
+body {
+  margin: 0;
+  font: var(--body-sans);
+  color: var(--color-secondary-SanJuanBlue);
+  background: #EDF3F8;
+  width: 100%;
+
+}
+
+/* Fixed-size mobile frame (375 x 760) */
+/* check if correct width adjusted now */
+.artboard {
+  position: relative;
+  width: 1440px;
+  height: 696px;
+  margin: 0 auto 40px; /* center and add space before next section */
+  overflow: hidden;
+}
+
+
+/* Circle in the background */
+.artboard::before {
+  content: "";
+  position: absolute;
+  top: -190px;
+  left: 799px;
+  width: 800px;
+  height: 800px;
+  /* border-radius: 50%; */
+  border-radius: 65% 50% 65% 60%;
+  background: #d3dbe3;
+
+  transform: rotate(-00deg);
+}
+
+/* Main hero container (same size as artboard) */
+.hero {
+  position: relative;
+  width: 695px;
+  height: 760px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Controls block: input + CTA together */
+.hero__controls {
+  position: absolute;
+  top: 504px;
+  left: 54px;
+  transform: translateX(-50%);
+  width: 647px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px; /* space between input and button */
+  align-items: center;
+}
+
+/* Phone image above the headline */
+.hero__visual {
+  position: absolute;
+  top: 40px;
+  left: 701px;
+  transform: translateX(-50%);
+  width: 422px;
+  height: 795px;
+  opacity: 1;
+}
+
+.hero__visual img {
+  width: 100%;
+  height: 100%;
+  /* filter: drop-shadow(0px 25px 40px #36536b33); */
+  opacity: 1;
+  object-fit: contain;
+}
+
+
+h1 {
+  position: absolute;
+  top: 237px;
+  left: 64px;
+  transform: translateX(-50%);
+  width: 546px; 
+  height: 243px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 72px; 
+  line-height: 75px;
+  color: var(--color-secondary-SanJuanBlue);
+  letter-spacing: -0.25px;
+  margin: 0;
+  text-align: left;
+}
+
+.hero__form {
+  display: block;
+}
+
+/* Email input row */
+.hero__form {
+  width: 527px;
+  height: 48px; /* fixed input height */
+}
+
+/* Email field styling */
+.hero__form input {
+  border: none;
+  border-radius: 24px;
+  height: 48px;
+  padding: 0 24px;
+  font: var(--body-sans);
+  font-weight: 700; 
+  color: var(--color-secondary-SanJuanBlue);
+  background: #ffffff;
+  box-shadow: var(--input-shadow);
+  width: 445px; /* fixed width (aligns with CTA) */
+
+  /* top: 700px; */
+
+  position: relative;
+}
+
+.hero__form input::placeholder {
+  color: #36536b8c;
+  font-weight: 700; /* ensure placeholder appears same weight as in input field */
+}
+
+/* Hide the in-form button; we use a separate CTA */
+.hero__form button {
+  display: none;
+}
+
+.hero__form button:hover {
+  background: var(--color-secondary-CharmPink-Act);
+}
+
+/* Standalone CTA: Schedule a Demo */
+.hero__cta {
+  width: 173px;
+  height: 48px;
+  border: none;
+  border-radius: 24px;
+  background: var(--color-primary-DarkPink);
+  color: #ffffff;
+  font: 600 15px "Public Sans", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 12px 35px #ba427059;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+
+  position:relative;
+  top: -70px;
+  left: 95px;
+}
+
+/* Hover and disabled states to match design sheet */
+.hero__cta:hover {
+  background: var(--color-secondary-CharmPink-Act);
+  box-shadow: 0 12px 35px #da6d9773;
+}
+
+.hero__cta:disabled,
+.hero__cta[disabled] {
+  background: var(--color-secondary-CharmPink-Act);
+  opacity: 0.55;
+  box-shadow: 0 12px 35px #1b262f1f;
+  cursor: not-allowed;
+}
+
+/* Help text under the CTA */
+.hero__help {
+  position: absolute;
+  top: 568px;
+  left: -180px;
+  width: 225px;
+  height: 17px;
+  font: 400 15px/17px "Public Sans", sans-serif;
+  color: var(--color-secondary-LightSanJuanBlue);
+  text-align: left;
+  margin: 0;
+}
+
+/* Make Contact Us look like a link */
+.hero__help a {
+  color: var(--color-secondary-SanJuanBlue);
+  font-weight: 600;
+}
+
+.hero__help a:hover {
+  border-color: currentColor;
+}
+
+/* Keep positions/sizes unchanged on wider viewports */
+/* @media (min-width: 640px) {
+  .hero { width: 1440px; height: 760px; }
+  .hero__form { width: 327px; height: 48px; }
+  .hero__form input { width: 327px; height: 48px; border-radius: 24px; }
+  .hero__cta { width: 327px; height: 48px; }
+
+  .hero__help {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .hero { max-width: 540px; }
+} */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -0px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  
+}
+
+/* Clients (logo grid) */
+.clients {
+  background-color: var(--color-secondary-MirageBlue);
+  color: #ffffff;
+  padding: 0 0 16px;
+  min-height: 473px; /* shrink empty area below logos */
+  position: relative;
+  width: 1440px;
+  margin: 0 auto; /* center section to prevent overflow visuals */
+  /* circle SVG sits behind the logos */
+  background-image: url('../images/bg-pattern-circle.svg');
+  background-repeat: no-repeat;
+  background-position: top -360px left -234px; 
+  background-size: 780px 780px; /
+}
+/* .clients::before {
+  content: "";
+  position: relative;
+  top: -190px;
+  left: 799px;
+  width: 800px;
+  height: 800px;
+
+  border-radius: 50%;
+  background: #d3dbe3;
+
+  transform: rotate(-00deg);
+} */
+
+.clients__wrap {
+  width: 375px; /* fixed artboard width */
+  margin: 0 auto;
+  padding-top: 96px; /* fixed spacing */
+}
+
+.clients__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 24px; /* slightly tighter vertical spacing */
+}
+
+.clients__full__width{
+
+
+    display: flex;
+    flex-flow: row wrap;
+    width: 536px;
+    height: 103px;
+
+    position: relative;
+    top: 188px;
+    left: 740px;
+    /* margin: auto; */
+  }
+
+.client {
+  max-width: 160px;
+  height: auto;
+}
+
+.client1 {
+  width: 33.3%;
+}
+
+.client1__img{
+  width: 129px;
+  height: 17px;
+
+  margin-left: 0px;
+  margin-top: 6px;
+}
+
+.client2 {
+  width: 33.3%;
+}
+
+.client2__img{
+  width: 145px;
+  height: 31px;
+
+  margin-top: -1px;
+  margin-left: 12px;
+}
+
+.client3 {
+  width: 33.3%;
+}
+
+.client3__img{
+  width: 140px;
+  height: 27px;
+
+  /* margin-top: 36px;
+  margin-left: 1px; */
+  margin-top: 1px;
+  margin-left: 39px;
+}
+
+.client4 {
+  width: 33.3%;
+}
+
+.client4__img{
+  width: 131px;
+  height: 17px;
+
+  margin-top: 44px;
+  margin-left: 0px;
+
+  /* margin-left: 32px;
+  margin-top: 39px; */
+}
+
+.client5 {
+  width: 33.3%;
+}
+
+.client5 img{
+  width: 96px;
+  height: 33px;
+
+  margin-left: 37px;
+  margin-top: 36px;
+  /* margin-left: 9px;
+  margin-top: 37px; */
+}
+
+.client6 {
+  width: 33.3%;
+}
+
+.client6__img {
+  width: 137px;
+  height: 26px;
+
+  margin-top: 40px;
+  margin-left: 42px;
+  /* margin-left: 18px;
+  margin-top: 40px; */
+}
+
+/* Who we work with (text + button) */
+.partners {
+  background: #ffffff00;
+  color: #ffffff;
+  padding: 32px 0 64px; 
+  margin-top: -4px;
+  position: relative; /* enable overlay pseudo-element */
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto; /* center partners section */
+}
+
+.partners__wrap {
+  width: 445px; /* fixed width */
+  margin: 0 auto;
+  text-align: left;
+
+  position: relative;
+  left: -334px;
+  top: -433px;
+}
+
+.partners__wrap h2 {
+  font: 400 48px/40px "DM Serif Display", serif;
+  letter-spacing: -0.25px;
+  margin: 37px 0px;
+}
+
+.partners__wrap p {
+  font: var(--body-sans);
+  color: var(--color-primary-LinkWaterWhite);
+  opacity: 0.85;
+  width: 445px;
+  margin: 0 auto 28px;
+  
+}
+
+.partners__cta {
+  margin-top: 2px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 48px;
+  border-radius: 24px;
+  border: 1px solid var(--color-primary-LinkWaterWhite);
+  color: var(--color-primary-LinkWaterWhite);
+  text-decoration: none;
+  font: 600 15px/20px "Public Sans", sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.partners__cta:hover {
+  background: #fbfcfe1a;
+}
+
+/* Easy to implement */
+.easy {
+  background: #EDF3F8;
+  color: var(--color-secondary-SanJuanBlue);
+  padding: 40px 0 60px;
+}
+
+.easy__wrap {
+  width: 1440px; /* fixed width */
+  height: 795px;
+  margin: 0 auto;
+  text-align: center;
+
+  background-image: url('../images/bg-pattern-circle.svg');
+  background-repeat: no-repeat;
+  background-position: top 10px right -390px; 
+  background-size: 780px 780px; /
+}
+
+.easy__artboard {
+  width: 445px; 
+  height: 284px; 
+  margin: 0 auto 170px; 
+  position: relative;
+  /* object-fit: fill; */
+}
+
+.easy__img {
+  position: absolute;
+  top: -340px; /* lift above artboard to match visual */
+  /* left: 55%; */
+  transform: translateX(-50%);
+  /* width: 660px; 
+  height: 668px;  */
+  /* object-fit: contain; */
+  filter: drop-shadow(0 20px 40px #36536b40);
+
+  left: -84px;
+}
+
+.easy__title {
+  width: 447px; 
+  height: 49px; 
+  margin: 0 auto 16px;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 48px; 
+  line-height: 49px; 
+  letter-spacing: -0.25px;
+  color: var(--color-secondary-SanJuanBlue);
+  position: relative;
+  left: 210px;
+  top: -675px;
+}
+
+.easy__text {
+  width: 428px; 
+  height: 101px; 
+  margin: 0 auto;
+  font: var(--body-sans);
+  color: var(--color-secondary-LightSanJuanBlue);
+  line-height: 26px;
+  overflow: hidden; /* enforce visual box height */
+  text-align: left;
+
+  position: relative;
+  left: 229px;
+  top: -665px;
+}
+
+/* Easy section: two phones below the text */
+.easy__phones {
+  width: 207px;
+
+  margin: 8px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: -5px;
+
+  position: relative;
+  left: 350px;
+  top: -536px;
+  
+}
+
+.easy__caption {
+  width: 327px;
+  margin: 12px auto 0;
+  text-align: left;
+
+  position: relative;
+  left: -200px;
+  top: -335px;
+}
+
+.easy__caption-title {
+  font-size: 48px;
+  font-family: "DM Serif Display-Regular", serif;
+  line-height: 36px;
+  letter-spacing: -0.37x;
+  color: #36536b;
+  font-weight: 600;
+  margin: 0 0 6px;
+
+  width: 445px;
+
+  position: relative;
+  top: -620px;
+  left: -192px;
+}
+
+.easy__caption-text {
+  font-size: 15px;
+  line-height: 28px;
+  color: #6c8294;
+  margin: 0;
+
+  width: 446px;
+  position: relative;
+  top: -590px;
+  left: -191px;
+}
+
+.easy__phone {
+  /* width: 180px; */
+  height: 658px;
+  /* height: auto; */
+  filter: drop-shadow(0 12px 24px #36536b33);
+}
+
+.easy__phone:nth-child(2) {
+  position: relative;
+  left: -115px;
+}
+
+.finance__circles {
+  padding-top: 80px;
+  padding-inline: 24px;
+
+  height: 280px;
+  width: 1440px;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  position: relative;
+  left: 142px;
+  
+}
+
+.finance__circles img:nth-child(1){
+  margin-left: 118px;
+}
+
+
+.finance__circle-banking,
+.finance__circle-payments {
+  margin-left: 30px;
+}
+
+.finance__circle-banking,
+.finance__circle-payments, .finance__circle-personal {
+  width: 350px;
+}
+
+
+.finance__circle-name {
+  letter-spacing: -0.138px;
+  font: var(--body-sans);
+  font-weight: 700;
+  font-size: 18px;
+  padding-bottom: 16px;
+  padding-top: 29px;
+  text-align: center;
+}
+.finance__circle-about {
+  font: var(--body-sans);
+  letter-spacing: -0.115px;
+  line-height: 25px;
+  color: #6c8294;
+  text-align: center;
+}
+
+h3{
+  font: var(--h3-DM-large);
+  font-size: 48px;
+
+  margin-top: 4px;
+}
+
+.hero__cta2{
+  position: relative;
+  left: 271px;
+  top: -48px;
+
+  width: 173px;
+  height: 48px;
+  border: none;
+  border-radius: 24px;
+  background: var(--color-primary-DarkPink);
+  color: #ffffff;
+  font: 600 15px "Public Sans", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 12px 35px #ba427059;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+
+}
+
+.hero__form2{
+  width: 450px;
+
+  height: 48px;
+}
+
+.hero__form2 input {
+  border: none;
+  border-radius: 24px;
+  height: 48px;
+  padding: 0 24px;
+  font: var(--body-sans);
+  font-weight: 700; 
+  color: var(--color-secondary-SanJuanBlue);
+  background: #ffffff;
+  box-shadow: var(--input-shadow);
+  width: 445px; /* fixed width (aligns with CTA) */
+
+  /* top: 700px; */
+
+  position: relative;
+}
+
+.main-ready-to-strt{
+  margin-top: 96px;
+  margin-left: 163px;
+  margin-right: 168px;
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+
+
+}
