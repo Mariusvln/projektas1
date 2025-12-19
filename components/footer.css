@@ -66,6 +66,7 @@ a {
 .about {
   top: calc(50% - 8.5px);
   left: 12.07%;
+  transform: translateX(4px);
 }
 
 .contact {
