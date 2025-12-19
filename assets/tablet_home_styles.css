@@ -24,7 +24,7 @@ body {
 .artboard {
   position: relative;
   width: 768px;
-  height: 760px;
+  height: 770px;
   margin: 0 auto 40px; /* center and add space before next section */
   overflow: hidden;
 }
@@ -67,10 +67,10 @@ body {
 /* Phone image above the headline */
 .hero__visual {
   position: absolute;
-  top: 31px;
-  left: 195px;
+  top: 105px;
+  left: 204px;
   transform: translateX(-50%);
-  width: 211px;
+  width: 255px;
   height: 400px;
   opacity: 1;
 }
@@ -86,15 +86,15 @@ body {
 
 h1 {
   position: absolute;
-  top: 377px;
+  top: 487px;
   left: 50%;
   transform: translateX(-50%);
   width: 527px; 
   height: 116px;
   font-family: "DM Serif Display", serif;
   font-weight: 400;
-  font-size: 32px; 
-  line-height: 36px;
+  font-size: 48px; 
+  line-height: 55px;
   color: var(--color-secondary-SanJuanBlue);
   letter-spacing: -0.25px;
   margin: 0;
@@ -122,7 +122,11 @@ h1 {
   color: var(--color-secondary-SanJuanBlue);
   background: #ffffff;
   box-shadow: var(--input-shadow);
-  width: 527px; /* fixed width (aligns with CTA) */
+  width: 445px; /* fixed width (aligns with CTA) */
+
+  position: relative;
+  left: 43px;
+  top: 121px;
 }
 
 .hero__form input::placeholder {
@@ -141,7 +145,7 @@ h1 {
 
 /* Standalone CTA: Schedule a Demo */
 .hero__cta {
-  width: 527px;
+  width: 173px;
   height: 48px;
   border: none;
   border-radius: 24px;
@@ -150,7 +154,11 @@ h1 {
   font: 600 16px/20px "Public Sans", sans-serif;
   cursor: pointer;
   box-shadow: 0 12px 35px #ba427059;
-  transition: background-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+
+  position:relative;
+  top: 52px;
+  left: 135px;;
 }
 
 /* Hover and disabled states to match design sheet */
@@ -170,11 +178,11 @@ h1 {
 /* Help text under the CTA */
 .hero__help {
   position: absolute;
-  top: 642px;
-  left: 74px;
+  top: 693px;
+  left: 175px;
   width: 225px;
   height: 17px;
-  font: 400 14px/17px "Public Sans", sans-serif;
+  font: 400 15px/17px "Public Sans", sans-serif;
   color: var(--color-secondary-LightSanJuanBlue);
   text-align: left;
   margin: 0;
@@ -191,7 +199,7 @@ h1 {
 }
 
 /* Keep positions/sizes unchanged on wider viewports */
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
   .hero { width: 375px; height: 760px; }
   .hero__form { width: 327px; height: 48px; }
   .hero__form input { width: 327px; height: 48px; border-radius: 24px; }
@@ -203,7 +211,7 @@ h1 {
   }
 
   .hero { max-width: 540px; }
-}
+} */
 
 .visually-hidden {
   position: absolute;
@@ -357,6 +365,8 @@ h1 {
   width: 768px;
   margin-left: auto;
   margin-right: auto; /* center partners section */
+
+  height: 267px;
 }
 
 .partners__wrap {
@@ -366,31 +376,44 @@ h1 {
 }
 
 .partners__wrap h2 {
-  font: 400 32px/40px "DM Serif Display", serif;
+  font: 400 48px/40px "DM Serif Display", serif;
   letter-spacing: -0.25px;
   margin: 8px 0 16px;
+
+  width: 457px;
+
+  position: relative;
+  left: -64px;
+  top: -122px;
 }
 
 .partners__wrap p {
   font: var(--body-sans);
   color: var(--color-primary-LinkWaterWhite);
   opacity: 0.85;
-  width: 327px;
+  width: 456px;
   margin: 0 auto 28px;
+
+  position: relative;
+  top: -108px;
+  left: -64px;
 }
 
 .partners__cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 168px;
+  width: 129px;
   height: 48px;
   border-radius: 24px;
   border: 1px solid var(--color-primary-LinkWaterWhite);
   color: var(--color-primary-LinkWaterWhite);
   text-decoration: none;
-  font: 600 16px/20px "Public Sans", sans-serif;
+  font: 600 15px/20px "Public Sans", sans-serif;
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+
+  position: relative;
+  top: -104px;
 }
 
 .partners__cta:hover {
@@ -411,8 +434,8 @@ h1 {
 }
 
 .easy__artboard {
-  width: 375px; 
-  height: 130px; 
+  width: 410px; 
+  height: 250px; 
   margin: 0 auto 170px; 
   position: relative;
 }
@@ -422,33 +445,45 @@ h1 {
   top: -9px; /* lift above artboard to match visual */
   left: 55%;
   transform: translateX(-50%);
-  width: 458px; 
-  height: 329px; 
-  object-fit: contain;
+  width: 532px; 
+  height: 559px;
+  
+  position: relative;
+  left: 322px;
+  top: -71px;
+  /* object-fit: contain; */
+
   filter: drop-shadow(0 20px 40px #36536b40);
 }
 
 .easy__title {
-  width: 327px; 
+  width: 573px; 
   height: 49px; 
   margin: 0 auto 16px;
   font-family: "DM Serif Display", serif;
   font-weight: 400;
-  font-size: 37px; 
+  font-size: 48px; 
   line-height: 49px; 
   letter-spacing: -0.25px;
   color: var(--color-secondary-SanJuanBlue);
+
   position: relative;
+  left: 97px;
+  top: -58px;
 }
 
 .easy__text {
-  width: 328px; 
+  width: 573px; 
   height: 101px; 
   margin: 0 auto;
   font: var(--body-sans);
   color: var(--color-secondary-LightSanJuanBlue);
-  line-height: 22px;
+  line-height: 25px;
   overflow: hidden; /* enforce visual box height */
+
+  position: relative;
+  left: 97px;
+  top: -43px;
 }
 
 /* Easy section: two phones below the text */
@@ -467,13 +502,19 @@ h1 {
 }
 
 .easy__caption-title {
-  font-size: 36px;
+  font-size: 48px;
   font-family: "DM Serif Display-Regular", serif;
   line-height: 36px;
   letter-spacing: 0.18px;
   color: #36536b;
   font-weight: 600;
   margin: 0 0 6px;
+
+  width: 576px;
+
+  position: relative;
+  left: -13px;
+  top: -55px;
 }
 
 .easy__caption-text {
@@ -481,10 +522,25 @@ h1 {
   line-height: 28px;
   color: #6c8294;
   margin: 0;
+
+  width: 573px;
+
+  position: relative;
+  left: -27px;
+  top: -29px;
 }
 
 .easy__phone {
-  width: 180px;
+  position: relative;
+  top: -35px;
+  left: 150px;
+
+  width: 268px;
   height: auto;
   filter: drop-shadow(0 12px 24px #36536b33);
+}
+
+.easy__phone:nth-child(2) {
+  position: relative;
+  left: 75px;
 }
