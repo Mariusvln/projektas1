@@ -448,6 +448,12 @@ h1 {
   .finance__circle-about {
     width: 220px;
   }
+  .finance__circle-personal img {
+    margin-left: 15px;
+  }
+  .finance__circle-payments img {
+    margin-right: 10px;
+  }
 }
 
 @media (min-width: 1440px) {
