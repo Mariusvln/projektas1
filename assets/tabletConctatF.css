@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   body {
     max-width: 768px;
   }
@@ -34,8 +34,13 @@
   .title-to-start-contact {
     font: var(--h2-DM);
   }
-  .title-to-start-contact{
+  .title-to-start-contact {
     position: absolute;
-    top: 720px;
+    top: 1100px;
+    padding-bottom: 40px;
+    left: 230px;
+  }
+  .clients_logo {
+    margin-bottom: 200px;
   }
 }
