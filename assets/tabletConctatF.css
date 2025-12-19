@@ -10,12 +10,32 @@
   .page-main {
     padding-inline: 97px;
   }
-  .page-header{
+  .page-header {
     padding-bottom: 0;
   }
   .page-header__text {
     font: var(--h2-DM);
     padding-bottom: 54px;
-   padding-inline: 97px;
+    padding-inline: 97px;
+  }
+  .ready-to-start_component {
+    margin-bottom: 100px;
+  }
+  .btn-primary-light-contact {
+    width: 173px;
+    position: absolute;
+    left: 445px;
+  }
+  .input-to-start-contact {
+    width: 445px;
+    position: absolute;
+    left: 150px;
+  }
+  .title-to-start-contact {
+    font: var(--h2-DM);
+  }
+  .title-to-start-contact{
+    position: absolute;
+    top: 720px;
   }
 }
