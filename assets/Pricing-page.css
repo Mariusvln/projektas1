@@ -369,7 +369,6 @@ li.checked::before {
   .about-plan-one,
   .about-plan-two,
   .about-plan-three {
-    width: 300px;
     margin: 0px;
     padding-top: 24px;
     padding-bottom: 90px;
@@ -377,9 +376,17 @@ li.checked::before {
     line-height: 28px;
     text-align: left;
     font: var(--body-sans);
-    opacity: 70%;
+    opacity: 90%;
   }
-
+.about-plan-one{
+  width: 350px;
+}
+.about-plan-two{
+  width: 350px;
+}
+.about-plan-three{
+  width: 350px;
+}
   .price {
     font-size: 56px;
     text-align: left;
@@ -418,7 +425,7 @@ li.checked::before {
 
   .hr-six {
     position: absolute;
-    bottom: 532px;
+    top: 814px;
     left: 910px;
   }
 
@@ -541,7 +548,6 @@ li.checked::before {
   .about-plan-one,
   .about-plan-two,
   .about-plan-three {
-    width: 225px;
     margin:0;
     padding-top: 16px;
     padding-bottom: 90px;
@@ -549,11 +555,22 @@ li.checked::before {
     line-height: 28px;
     text-align: center;
     font: var(--body-sans);
-    opacity: 70%;
+    opacity: 80%;
    padding-right: 39px;
-    
-  }
 
+  margin-left: -35px; 
+  }
+.about-plan-one{
+ width:290px;
+}
+.about-plan-two{
+  width: 230px;
+  margin-left: 2px;
+}
+.about-plan-three{
+  width: 270px;
+  margin-left: -20px;
+}
 
   .price {
     font: var(--h2-DM);
