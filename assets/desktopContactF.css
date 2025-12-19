@@ -31,4 +31,12 @@
   .clients_logo .clients__wrap {
     padding: 40px 0;
   }
+  .input-to-start-contact {
+    position: absolute;
+    left: 820px;
+  }
+  .btn-primary-light-contact {
+    position: absolute;
+    left: 1095px;
+  }
 }
