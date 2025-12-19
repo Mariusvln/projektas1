@@ -435,6 +435,7 @@ h1 {
     display: flex;
     gap: 28px;
     padding-top: 100px;
+    padding-bottom: 100px;
   }
   .finance__circles img {
     width: 88px;
@@ -443,6 +444,9 @@ h1 {
   .finance__circle-banking,
   .finance__circle-payments {
     padding-top: 0px;
+  }
+  .finance__circle-about {
+    width: 220px;
   }
 }
 
@@ -457,8 +461,6 @@ h1 {
     height: 106px;
   }
   .finance__circle-about {
-    opacity: 0.7;
     width: 350px;
   }
- 
 }
