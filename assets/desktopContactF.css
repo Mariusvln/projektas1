@@ -33,10 +33,24 @@
   }
   .input-to-start-contact {
     position: absolute;
-    left: 820px;
+    left: 880px;
+    width: 445px;
+    top: 900px;
   }
   .btn-primary-light-contact {
     position: absolute;
-    left: 1095px;
+    left: 1155px;
+    width: 173px;
+    top: 900px;
+  }
+  .title-to-start-contact{
+    position: absolute;
+    left: 165px;
+    top: 820px;
+    font: var(--h2-DM);
+    
+  }
+  .form__button{
+    margin-bottom: 93px;
   }
 }
